@@ -1,10 +1,7 @@
 ---
 employees:
-  - whopper
-  - HAIL9000
   - branan
   - Magisus
-  - kylog
   - seangriff
   - Iristyle
   - er0ck
@@ -13,7 +10,6 @@ employees:
   - thallgren
   - joshcooper
   - hlindberg
-  - peterhuene
   - MikaelSmith
   - puppetcla
   - melissa
@@ -21,15 +17,11 @@ employees:
   - shrug
   - geoffnichols
   - justinstoller
-  - cprice404
   - KevinCorcoran
-  - rlinehan
   - nathanielksmith
   - gguillotte
-  - nfagerlund
   - jtappa
   - McdonaldSeanp
-  - ahenroid
   - glennsarti
   - adrienthebo
   - kbarber
@@ -38,3 +30,4 @@ employees:
   - MosesMendoza
   - adreyer
   - phongdly
+  - ericldelaney
