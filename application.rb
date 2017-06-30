@@ -293,7 +293,7 @@ post '/payload' do
       end
 
       add_comment_to_trello_card(card, "Update: force push by #{user}")
-  elsif action == "closed" # TODO: merged?
+  elsif action == "closed" # merged uses the "closed" action
     # Closed PR. Archive trello card.
     existing = get_existing_trello_card(board, get_pull_request_url(data))
     if existing
