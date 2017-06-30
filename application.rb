@@ -271,11 +271,11 @@ post '/payload' do
     move_trello_card(card, list)
   elsif action == "synchronize"
     # The PR was force pushed to
-      card = get_existing_trello_card(board, get_pull_request_url(data))
-      if card
-        move_trello_card(card, @waiting_on_us_list) if (card.list_id != @open_pr_list.id && card.list_id != @waiting_on_deep_dive_list.id)
-        add_comment_to_trello_card(card, "Update: force push by #{user}")
-      end
+    card = get_existing_trello_card(board, get_pull_request_url(data))
+    if card
+      move_trello_card(card, @waiting_on_us_list) if (card.list_id != @open_pr_list.id && card.list_id != @waiting_on_deep_dive_list.id)
+      add_comment_to_trello_card(card, "Update: force push by #{user}")
+    end
   elsif action == "closed" # merged uses the "closed" action
     # Closed PR. Archive trello card.
     card = get_existing_trello_card(board, get_pull_request_url(data))
