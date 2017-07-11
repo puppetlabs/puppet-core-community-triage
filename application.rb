@@ -236,7 +236,7 @@ post '/payload' do
     end
   elsif action == "created"
     # Comments: If written by non-employee, move card to "waiting on us"
-    return if is_employee(user)
+    return if is_employee?(user)
 
     card = get_existing_trello_card(board, get_pull_request_url(data))
     if card
